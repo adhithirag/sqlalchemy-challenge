@@ -43,6 +43,7 @@ app = Flask(__name__)
 def welcome():
     """List all available api routes."""
     return (
+        f"Welcome to the Hawaii Climate API!<br/>"
         f"Available Routes:<br/>"
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
@@ -106,20 +107,6 @@ def tobs():
     tobs_data = list(np.ravel(most_active_station))
     
     return jsonify(tobs_data)
-
-
-#start route 
-@app.route("/api/v1.0/startdate")
-def start():
-    session = Session(engine)
-    start_date = 
-    
-    sel = [func.min(measurement.tobs), 
-       func.max(measurement.tobs), 
-       func.avg(measurement.tobs)]
-    
-    session.query(*sel).filter(measurement.station == 'USC00519281').all()
-
 
 
 
