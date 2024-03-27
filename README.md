@@ -23,6 +23,6 @@ In this challene, the goal was to do a basic climate analysis and explore the da
 ## Part 2 
 - Designing the climate app using Flask to create three static routes 
 
-/api/v1.0/precipitation
-/api/v1.0/stations
-/api/v1.0/tobs
+   - /api/v1.0/precipitation
+   - /api/v1.0/stations
+   - /api/v1.0/tobs
